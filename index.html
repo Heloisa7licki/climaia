@@ -11,168 +11,154 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     html { scroll-behavior: smooth; }
-    .glass { background: rgba(30,41,59,0.8); backdrop-filter: blur(10px); }
+    .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px); }
     .section { padding: 4rem 1rem; }
   </style>
 </head>
-<body class="bg-gradient-to-b from-gray-50 to-gray-200 text-gray-800">
+<body class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-gray-100">
+  
   <nav class="fixed top-0 left-0 right-0 z-50 glass shadow">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="text-2xl font-extrabold text-gray-100">Deputado Virtual</a>
-      <div class="hidden md:flex items-center gap-6 font-semibold text-gray-100">
-        <a href="#ideia" class="hover:text-blue-300">Ideia</a>
-        <a href="#proposito" class="hover:text-blue-300">Propósito</a>
-        <a href="#problemas" class="hover:text-blue-300">Problemas</a>
-        <a href="#timeline" class="hover:text-blue-300">Linha do Tempo</a>
-        <a href="#graficos" class="hover:text-blue-300">Gráficos</a>
-        <a href="#prompt" class="hover:text-blue-300">Prompt</a>
+      <a href="#home" class="text-2xl font-extrabold text-blue-200">Deputado Virtual</a>
+      <div class="hidden md:flex items-center gap-6 font-semibold text-gray-200">
+        <a href="#ideia" class="hover:text-blue-400">Ideia</a>
+        <a href="#proposito" class="hover:text-blue-400">Propósito</a>
+        <a href="#problemas" class="hover:text-blue-400">Problemas</a>
+        <a href="#timeline" class="hover:text-blue-400">Linha do Tempo</a>
+        <a href="#graficos" class="hover:text-blue-400">Gráficos</a>
+        <a href="#prompt" class="hover:text-blue-400">Prompt</a>
       </div>
-      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-gray-300 bg-white/10 text-white">☰</button>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-gray-600 text-gray-200">☰</button>
     </div>
-    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white">
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-700 bg-slate-800">
       <div class="px-4 py-3 flex flex-col gap-3 font-semibold">
-        <a href="#ideia" class="hover:text-blue-600">Ideia</a>
-        <a href="#proposito" class="hover:text-blue-600">Propósito</a>
-        <a href="#problemas" class="hover:text-blue-600">Problemas</a>
-        <a href="#timeline" class="hover:text-blue-600">Linha do Tempo</a>
-        <a href="#graficos" class="hover:text-blue-600">Gráficos</a>
-        <a href="#prompt" class="hover:text-blue-600">Prompt</a>
+        <a href="#ideia" class="hover:text-blue-400">Ideia</a>
+        <a href="#proposito" class="hover:text-blue-400">Propósito</a>
+        <a href="#problemas" class="hover:text-blue-400">Problemas</a>
+        <a href="#timeline" class="hover:text-blue-400">Linha do Tempo</a>
+        <a href="#graficos" class="hover:text-blue-400">Gráficos</a>
+        <a href="#prompt" class="hover:text-blue-400">Prompt</a>
       </div>
     </div>
   </nav>
 
-  <header id="home" class="relative h-[88vh] w-full flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+  <header id="home" class="relative h-[90vh] flex items-center justify-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
     <div class="text-center px-4" data-aos="fade-up">
-      <h1 class="text-5xl md:text-6xl font-extrabold">Leis para o Futuro do Planeta</h1>
-      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl opacity-90">Projeto da Maratona Tech que usa IA para simular um deputado federal criando projetos de lei sobre mudanças climáticas.</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold">Leis para o Futuro do Planeta</h1>
+      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl text-gray-300">Projeto da Maratona Tech que usa IA para simular um deputado federal criando projetos de lei sobre mudanças climáticas.</p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
         <a href="#ideia" class="px-6 py-3 rounded-full bg-blue-700 hover:bg-blue-800 transition text-white font-semibold">Explorar Projeto</a>
-        <a href="#prompt" class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-white font-semibold border border-white/40">Ver Prompt</a>
+        <a href="#prompt" class="px-6 py-3 rounded-full bg-slate-700 hover:bg-slate-600 transition text-white font-semibold">Ver Prompt</a>
       </div>
     </div>
   </header>
 
-  <section id="ideia" class="section max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">A Ideia</h2>
-    <p class="text-lg text-gray-700 leading-relaxed">O Deputado Virtual é um experimento de inteligência artificial em que treinamos prompts para simular um parlamentar brasileiro. A proposta é que a IA crie projetos de lei voltados para enfrentar as mudanças climáticas, incentivando a reflexão sobre como a tecnologia pode contribuir para a política e para a sustentabilidade.</p>
+  <section id="ideia" class="section max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6">Nossa Ideia</h2>
+    <p class="text-lg text-gray-300">Criamos um prompt que simula um deputado federal brasileiro. Ele gera projetos de lei sobre mudanças climáticas, detalhando artigos e justificativas, aproximando tecnologia da política ambiental.</p>
   </section>
 
-  <section id="proposito" class="section bg-gray-100" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">Nosso Propósito</h2>
-      <p class="text-lg text-gray-700 leading-relaxed">Queremos explorar como a inteligência artificial pode ser utilizada em debates sociais. Nosso objetivo é inspirar jovens a pensar em soluções inovadoras e reforçar a importância de políticas públicas para preservar o meio ambiente e combater a crise climática.</p>
-    </div>
+  <section id="proposito" class="section max-w-6xl mx-auto text-center bg-slate-800 rounded-2xl shadow-lg" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6">Propósito</h2>
+    <p class="text-lg text-gray-300">Nosso propósito é despertar consciência sobre a gravidade da crise climática, aproximando a juventude da política e mostrando como a inteligência artificial pode contribuir para soluções sustentáveis.</p>
   </section>
 
-  <section id="problemas" class="section max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-gray-900 mb-10">Problemáticas Atuais do Clima</h2>
+  <section id="problemas" class="section max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-300 mb-10 text-center">Problemáticas Climáticas</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/414/414974.png" class="w-16 h-16 mb-4" alt="">
-        <h3 class="text-xl font-semibold mb-2">Eventos Extremos</h3>
-        <p class="text-gray-600">Enchentes, secas e tempestades estão cada vez mais frequentes, trazendo perdas humanas e materiais.</p>
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-white mb-3">🌡️ Aumento da Temperatura</h3>
+        <p class="text-gray-300">Os últimos anos foram os mais quentes já registrados, com efeitos em secas, incêndios florestais e perda de biodiversidade.</p>
       </div>
-      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="w-16 h-16 mb-4" alt="">
-        <h3 class="text-xl font-semibold mb-2">Aquecimento Global</h3>
-        <p class="text-gray-600">As temperaturas médias do planeta continuam subindo, afetando ecossistemas e sociedades inteiras.</p>
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="150">
+        <h3 class="text-xl font-semibold text-white mb-3">🌧️ Chuvas Extremas</h3>
+        <p class="text-gray-300">Eventos climáticos extremos, como enchentes e deslizamentos, têm se tornado mais frequentes, impactando comunidades inteiras.</p>
       </div>
-      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1866/1866943.png" class="w-16 h-16 mb-4" alt="">
-        <h3 class="text-xl font-semibold mb-2">Poluição e Desmatamento</h3>
-        <p class="text-gray-600">A perda de florestas e o aumento de emissões de gases poluentes comprometem a qualidade de vida.</p>
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-semibold text-white mb-3">🌫️ Poluição e Desmatamento</h3>
+        <p class="text-gray-300">A poluição atmosférica e o desmatamento aumentam os riscos à saúde e reduzem a capacidade da Terra de absorver CO₂.</p>
       </div>
     </div>
   </section>
 
-  <section id="timeline" class="section bg-gray-100" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-900 mb-10">Linha do Tempo do Clima</h2>
-      <div class="relative border-l-4 border-blue-700">
-        <div class="ml-6 mb-8">
-          <h3 class="text-xl font-semibold">1990</h3>
-          <p class="text-gray-600">Concentração de CO₂ em torno de 355 ppm.</p>
-        </div>
-        <div class="ml-6 mb-8">
-          <h3 class="text-xl font-semibold">2000</h3>
-          <p class="text-gray-600">Aumento da temperatura média global em +0.35°C.</p>
-        </div>
-        <div class="ml-6 mb-8">
-          <h3 class="text-xl font-semibold">2010</h3>
-          <p class="text-gray-600">Recordes de desmatamento e emissões de gases do efeito estufa.</p>
-        </div>
-        <div class="ml-6 mb-8">
-          <h3 class="text-xl font-semibold">2020</h3>
-          <p class="text-gray-600">CO₂ ultrapassa 414 ppm; eventos extremos se intensificam.</p>
-        </div>
+  <section id="timeline" class="section bg-slate-800 text-center">
+    <h2 class="text-3xl font-bold text-blue-300 mb-10">Linha do Tempo do Clima</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-gray-300">
+      <div data-aos="fade-right">
+        <h3 class="text-xl font-semibold">1990</h3>
+        <p>CO₂ em 355 ppm</p>
+      </div>
+      <div data-aos="fade-up">
+        <h3 class="text-xl font-semibold">2000</h3>
+        <p>CO₂ em 370 ppm</p>
+      </div>
+      <div data-aos="fade-left">
+        <h3 class="text-xl font-semibold">2023</h3>
+        <p>CO₂ em 420 ppm</p>
       </div>
     </div>
   </section>
 
-  <section id="graficos" class="section max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-gray-900 mb-10">Indicadores Climáticos</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+  <section id="graficos" class="section max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-300 mb-10 text-center">Dados Climáticos</h2>
+    <div class="grid md:grid-cols-3 gap-8">
       <canvas id="co2Chart"></canvas>
       <canvas id="tempChart"></canvas>
       <canvas id="forestChart"></canvas>
     </div>
   </section>
 
-  <section id="prompt" class="section bg-gray-100" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">Prompt Utilizado</h2>
-      <div class="space-y-4">
-        <details class="bg-white p-4 rounded-lg shadow">
-          <summary class="cursor-pointer font-semibold">Etapa 1</summary>
-          <p class="mt-2 text-gray-700">Você é um deputado federal do Brasil e precisa criar um projeto de lei sobre medidas a serem implementadas para reduzir os impactos das mudanças climáticas no país. Dê sua resposta em forma de um projeto de lei.</p>
-        </details>
-        <details class="bg-white p-4 rounded-lg shadow">
-          <summary class="cursor-pointer font-semibold">Etapa 2</summary>
-          <p class="mt-2 text-gray-700">Gostaria que você detalhasse sua resposta e desse uma descrição mais ampla para cada artigo, desenvolvendo principalmente sua justificativa do projeto.</p>
-        </details>
-        <details class="bg-white p-4 rounded-lg shadow">
-          <summary class="cursor-pointer font-semibold">Etapa 3</summary>
-          <p class="mt-2 text-gray-700">Gostaria que desenvolvesse apenas uma justificativa para o projeto de lei, incluída no fim dele. E desenvolva mais os artigos, detalhando-os em incisos e alíneas.</p>
-        </details>
-        <details class="bg-white p-4 rounded-lg shadow">
-          <summary class="cursor-pointer font-semibold">Etapa 4</summary>
-          <p class="mt-2 text-gray-700">Excelente! Gostaria agora que desenvolvesse a justificativa final com 6 parágrafos, estruturada em introdução, desenvolvimento e conclusão.</p>
-        </details>
-      </div>
+  <section id="prompt" class="section max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Prompt Utilizado</h2>
+    <div class="space-y-4">
+      <details class="bg-slate-800 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">1. Criar projeto de lei</summary>
+        <p class="text-gray-300 mt-2">Você é um deputado federal do Brasil e precisa criar um projeto de lei sobre medidas para reduzir os impactos das mudanças climáticas no país.</p>
+      </details>
+      <details class="bg-slate-800 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">2. Detalhar artigos</summary>
+        <p class="text-gray-300 mt-2">Gostaria que você detalhasse sua resposta e desse uma descrição mais ampla para cada artigo, desenvolvendo principalmente sua justificativa.</p>
+      </details>
+      <details class="bg-slate-800 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">3. Estruturar justificativa</summary>
+        <p class="text-gray-300 mt-2">Gostaria que desenvolvesse apenas uma justificativa para o projeto de lei, incluída no fim dele, detalhando artigos em incisos e alíneas.</p>
+      </details>
+      <details class="bg-slate-800 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">4. Justificativa final</summary>
+        <p class="text-gray-300 mt-2">Excelente! Gostaria agora que desenvolvesse a justificativa final com 6 parágrafos, estruturada em introdução, desenvolvimento e conclusão.</p>
+      </details>
     </div>
   </section>
 
-  <section class="section" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">Maratona Tech</h2>
-      <p class="text-lg text-gray-700 leading-relaxed">Este projeto foi criado durante a Maratona Tech, uma iniciativa que incentiva jovens a desenvolver soluções tecnológicas para problemas reais. Acreditamos que unir inovação, tecnologia e consciência ambiental é essencial para o futuro.</p>
-    </div>
+  <section class="section bg-slate-800 text-center">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6">Maratona Tech</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto">Este projeto nasceu durante a Maratona Tech, um evento de inovação que estimula estudantes a criarem soluções reais para problemas globais. O Deputado Virtual mostra como a IA pode contribuir para repensar políticas públicas de forma acessível e criativa.</p>
   </section>
 
-  <footer class="bg-gray-900 text-white">
+  <footer class="bg-slate-950 text-gray-300">
     <div class="max-w-7xl mx-auto px-4 py-8 text-center">
       <p class="text-lg">Projeto desenvolvido por nossa equipe para a Maratona Tech • 2025</p>
     </div>
   </footer>
 
   <script>
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    AOS.init({ duration: 700, once: true });
-    const years = [1990, 2000, 2010, 2015, 2020, 2023, 2025];
+    const btn = document.getElementById('menuBtn')
+    const menu = document.getElementById('mobileMenu')
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'))
+    AOS.init({ duration: 700, once: true })
+    const years = [1990, 2000, 2010, 2015, 2020, 2023, 2025]
     new Chart(document.getElementById('co2Chart'), {
       type: 'line',
-      data: { labels: years, datasets: [{ label: 'CO₂ (ppm)', data: [355,370,390,400,414,420,423], tension: 0.3, borderColor: 'rgb(37,99,235)' }] }
-    });
+      data: { labels: years, datasets: [{ label: 'CO₂ (ppm)', data: [355,370,390,400,414,420,423], tension: 0.3, borderColor: 'rgb(96,165,250)' }] }
+    })
     new Chart(document.getElementById('tempChart'), {
       type: 'line',
-      data: { labels: years, datasets: [{ label: 'Δ Temp (°C)', data: [0.2,0.35,0.55,0.7,0.9,1.0,1.05], tension: 0.3, borderColor: 'rgb(59,130,246)' }] }
-    });
+      data: { labels: years, datasets: [{ label: 'Δ Temp (°C)', data: [0.2,0.35,0.55,0.7,0.9,1.0,1.05], tension: 0.3, borderColor: 'rgb(147,197,253)' }] }
+    })
     new Chart(document.getElementById('forestChart'), {
       type: 'bar',
-      data: { labels: years, datasets: [{ label: 'Índice de Desmatamento', data: [100,120,150,130,160,170,165], backgroundColor: 'rgb(29,78,216)' }] }
-    });
+      data: { labels: years, datasets: [{ label: 'Índice de Desmatamento', data: [100,120,150,130,160,170,165], backgroundColor: 'rgb(59,130,246)' }] }
+    })
   </script>
 </body>
 </html>
