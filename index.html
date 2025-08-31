@@ -1,0 +1,105 @@
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles, Globe, Users } from "lucide-react";
+
+export default function ProjetoSite() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 text-gray-800">
+      {/* Header */}
+      <header className="relative overflow-hidden bg-green-700 text-white shadow-md">
+        <div className="max-w-6xl mx-auto px-6 py-12 text-center">
+          <motion.h1 
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl font-extrabold md:text-5xl"
+          >
+            Deputado Virtual 🌍
+          </motion.h1>
+          <p className="mt-4 text-lg max-w-2xl mx-auto">
+            Um projeto da <span className="font-semibold">Maratona Tech</span> para criar leis sobre mudanças climáticas usando IA.
+          </p>
+        </div>
+      </header>
+
+      {/* Seções */}
+      <main className="max-w-6xl mx-auto p-6 space-y-16">
+        {/* Nossa Ideia */}
+        <motion.section 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid md:grid-cols-2 gap-10 items-center"
+        >
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Ideia" className="rounded-2xl shadow-lg" />
+          <div>
+            <h2 className="text-3xl font-bold mb-4 flex items-center gap-2"><Sparkles className="text-green-600"/> Nossa Ideia</h2>
+            <p>
+              Desenvolvemos um <span className="font-bold">prompt interativo</span> que simula o papel de um deputado federal,
+              criando projetos de lei sobre mudanças climáticas. Assim, mostramos como a IA pode contribuir com reflexões
+              políticas e sociais de forma criativa.
+            </p>
+          </div>
+        </motion.section>
+
+        {/* Propósito */}
+        <motion.section 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid md:grid-cols-2 gap-10 items-center"
+        >
+          <div>
+            <h2 className="text-3xl font-bold mb-4 flex items-center gap-2"><Globe className="text-green-600"/> Propósito e Motivações</h2>
+            <p>
+              Nosso objetivo é <span className="font-bold">unir tecnologia e cidadania</span>, mostrando como a inteligência
+              artificial pode ser uma ferramenta de educação política e de conscientização ambiental. A motivação surge da
+              necessidade urgente de discutir medidas eficazes contra as mudanças climáticas.
+            </p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1473929731240-72a265621fc1" alt="Propósito" className="rounded-2xl shadow-lg" />
+        </motion.section>
+
+        {/* Maratona Tech */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid md:grid-cols-2 gap-10 items-center"
+        >
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Maratona" className="rounded-2xl shadow-lg" />
+          <div>
+            <h2 className="text-3xl font-bold mb-4 flex items-center gap-2"><Users className="text-green-600"/> Sobre a Maratona Tech</h2>
+            <p>
+              A <span className="font-bold">Maratona Tech</span> é um evento que estimula inovação e colaboração. Durante a maratona,
+              aprendemos a transformar ideias em protótipos reais, unindo programação, criatividade e impacto social.
+            </p>
+          </div>
+        </motion.section>
+
+        {/* Prompt */}
+        <motion.section 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-center">Nosso Prompt</h2>
+          <Card className="bg-white/90 shadow-lg border-2 border-green-200">
+            <CardContent className="p-6 space-y-4 text-gray-700">
+              <p><span className="font-bold">1.</span> Você é um deputado federal do Brasil e precisa criar um projeto de lei sobre medidas a serem implementadas para reduzir os impactos das mudanças climáticas no país. Dê sua resposta em forma de um projeto de lei.</p>
+              <p><span className="font-bold">2.</span> Gostaria que você detalhasse sua resposta e desse uma descrição mais ampla para cada artigo, desenvolvendo principalmente sua justificativa do projeto.</p>
+              <p><span className="font-bold">3.</span> Gostaria que desenvolvesse apenas uma justificativa para o projeto de lei, incluída no fim dele. E desenvolva mais os artigos, detalhando-os em incisos e alíneas.</p>
+              <p><span className="font-bold">4.</span> Excelente! Gostaria agora que desenvolvesse a justificativa final com 6 parágrafos, estruturada em introdução, desenvolvimento e conclusão.</p>
+            </CardContent>
+          </Card>
+        </motion.section>
+      </main>
+
+      {/* Footer */}
+      <footer className="p-8 bg-green-700 text-white text-center mt-16">
+        <p className="text-lg">🌱 Projeto desenvolvido para a Maratona Tech 2025</p>
+      </footer>
+    </div>
+  )
+}
