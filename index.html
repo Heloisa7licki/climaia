@@ -5,37 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deputado Virtual • Maratona Tech</title>
   <meta name="description" content="Projeto Deputado Virtual: IA criando projetos de lei sobre mudanças climáticas. Maratona Tech." />
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-
   <style>
     html { scroll-behavior: smooth; }
-    .glass { background: rgba(30, 64, 175, 0.75); backdrop-filter: blur(10px); }
+    .glass { background: rgba(30,41,59,0.8); backdrop-filter: blur(10px); }
     .section { padding: 4rem 1rem; }
   </style>
 </head>
-<body class="bg-gradient-to-b from-blue-50 to-blue-100 text-gray-800">
-  
-  <!-- Navbar -->
+<body class="bg-gradient-to-b from-gray-50 to-gray-200 text-gray-800">
   <nav class="fixed top-0 left-0 right-0 z-50 glass shadow">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="text-2xl font-extrabold text-blue-100 flex items-center gap-2">
-        Deputado Virtual
-      </a>
-      <div class="hidden md:flex items-center gap-6 font-semibold text-white">
-        <a href="#ideia" class="hover:text-blue-200">Ideia</a>
-        <a href="#proposito" class="hover:text-blue-200">Propósito</a>
-        <a href="#problemas" class="hover:text-blue-200">Problemas</a>
-        <a href="#timeline" class="hover:text-blue-200">Linha do Tempo</a>
-        <a href="#graficos" class="hover:text-blue-200">Gráficos</a>
-        <a href="#prompt" class="hover:text-blue-200">Prompt</a>
+      <a href="#home" class="text-2xl font-extrabold text-gray-100">Deputado Virtual</a>
+      <div class="hidden md:flex items-center gap-6 font-semibold text-gray-100">
+        <a href="#ideia" class="hover:text-blue-300">Ideia</a>
+        <a href="#proposito" class="hover:text-blue-300">Propósito</a>
+        <a href="#problemas" class="hover:text-blue-300">Problemas</a>
+        <a href="#timeline" class="hover:text-blue-300">Linha do Tempo</a>
+        <a href="#graficos" class="hover:text-blue-300">Gráficos</a>
+        <a href="#prompt" class="hover:text-blue-300">Prompt</a>
       </div>
-      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-gray-300 bg-white/10 text-white" aria-label="Abrir menu">☰</button>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-gray-300 bg-white/10 text-white">☰</button>
     </div>
     <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white">
       <div class="px-4 py-3 flex flex-col gap-3 font-semibold">
@@ -49,23 +41,115 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header id="home" class="relative h-[88vh] w-full flex items-center justify-center bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+  <header id="home" class="relative h-[88vh] w-full flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white">
     <div class="text-center px-4" data-aos="fade-up">
-      <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow">Leis para o Futuro do Planeta</h1>
-      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl opacity-95">Projeto da Maratona Tech que usa IA para simular um deputado federal criando projetos de lei sobre mudanças climáticas.</p>
+      <h1 class="text-5xl md:text-6xl font-extrabold">Leis para o Futuro do Planeta</h1>
+      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl opacity-90">Projeto da Maratona Tech que usa IA para simular um deputado federal criando projetos de lei sobre mudanças climáticas.</p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <a href="#ideia" class="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 transition text-white font-semibold">Explorar Projeto</a>
+        <a href="#ideia" class="px-6 py-3 rounded-full bg-blue-700 hover:bg-blue-800 transition text-white font-semibold">Explorar Projeto</a>
         <a href="#prompt" class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-white font-semibold border border-white/40">Ver Prompt</a>
       </div>
     </div>
   </header>
 
-  <!-- Seções abaixo seguem igual mas com cores ajustadas para tons de azul -->
-  <!-- ... (aqui entra as seções Ideia, Propósito, Problemas, Timeline, Gráficos, Prompt, Maratona Tech) ... -->
+  <section id="ideia" class="section max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">A Ideia</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">O Deputado Virtual é um experimento de inteligência artificial em que treinamos prompts para simular um parlamentar brasileiro. A proposta é que a IA crie projetos de lei voltados para enfrentar as mudanças climáticas, incentivando a reflexão sobre como a tecnologia pode contribuir para a política e para a sustentabilidade.</p>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white">
+  <section id="proposito" class="section bg-gray-100" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Nosso Propósito</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Queremos explorar como a inteligência artificial pode ser utilizada em debates sociais. Nosso objetivo é inspirar jovens a pensar em soluções inovadoras e reforçar a importância de políticas públicas para preservar o meio ambiente e combater a crise climática.</p>
+    </div>
+  </section>
+
+  <section id="problemas" class="section max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Problemáticas Atuais do Clima</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/414/414974.png" class="w-16 h-16 mb-4" alt="">
+        <h3 class="text-xl font-semibold mb-2">Eventos Extremos</h3>
+        <p class="text-gray-600">Enchentes, secas e tempestades estão cada vez mais frequentes, trazendo perdas humanas e materiais.</p>
+      </div>
+      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="w-16 h-16 mb-4" alt="">
+        <h3 class="text-xl font-semibold mb-2">Aquecimento Global</h3>
+        <p class="text-gray-600">As temperaturas médias do planeta continuam subindo, afetando ecossistemas e sociedades inteiras.</p>
+      </div>
+      <div class="p-6 rounded-xl shadow bg-white flex flex-col items-center text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1866/1866943.png" class="w-16 h-16 mb-4" alt="">
+        <h3 class="text-xl font-semibold mb-2">Poluição e Desmatamento</h3>
+        <p class="text-gray-600">A perda de florestas e o aumento de emissões de gases poluentes comprometem a qualidade de vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="section bg-gray-100" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 mb-10">Linha do Tempo do Clima</h2>
+      <div class="relative border-l-4 border-blue-700">
+        <div class="ml-6 mb-8">
+          <h3 class="text-xl font-semibold">1990</h3>
+          <p class="text-gray-600">Concentração de CO₂ em torno de 355 ppm.</p>
+        </div>
+        <div class="ml-6 mb-8">
+          <h3 class="text-xl font-semibold">2000</h3>
+          <p class="text-gray-600">Aumento da temperatura média global em +0.35°C.</p>
+        </div>
+        <div class="ml-6 mb-8">
+          <h3 class="text-xl font-semibold">2010</h3>
+          <p class="text-gray-600">Recordes de desmatamento e emissões de gases do efeito estufa.</p>
+        </div>
+        <div class="ml-6 mb-8">
+          <h3 class="text-xl font-semibold">2020</h3>
+          <p class="text-gray-600">CO₂ ultrapassa 414 ppm; eventos extremos se intensificam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="graficos" class="section max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Indicadores Climáticos</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <canvas id="co2Chart"></canvas>
+      <canvas id="tempChart"></canvas>
+      <canvas id="forestChart"></canvas>
+    </div>
+  </section>
+
+  <section id="prompt" class="section bg-gray-100" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Prompt Utilizado</h2>
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-semibold">Etapa 1</summary>
+          <p class="mt-2 text-gray-700">Você é um deputado federal do Brasil e precisa criar um projeto de lei sobre medidas a serem implementadas para reduzir os impactos das mudanças climáticas no país. Dê sua resposta em forma de um projeto de lei.</p>
+        </details>
+        <details class="bg-white p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-semibold">Etapa 2</summary>
+          <p class="mt-2 text-gray-700">Gostaria que você detalhasse sua resposta e desse uma descrição mais ampla para cada artigo, desenvolvendo principalmente sua justificativa do projeto.</p>
+        </details>
+        <details class="bg-white p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-semibold">Etapa 3</summary>
+          <p class="mt-2 text-gray-700">Gostaria que desenvolvesse apenas uma justificativa para o projeto de lei, incluída no fim dele. E desenvolva mais os artigos, detalhando-os em incisos e alíneas.</p>
+        </details>
+        <details class="bg-white p-4 rounded-lg shadow">
+          <summary class="cursor-pointer font-semibold">Etapa 4</summary>
+          <p class="mt-2 text-gray-700">Excelente! Gostaria agora que desenvolvesse a justificativa final com 6 parágrafos, estruturada em introdução, desenvolvimento e conclusão.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Maratona Tech</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Este projeto foi criado durante a Maratona Tech, uma iniciativa que incentiva jovens a desenvolver soluções tecnológicas para problemas reais. Acreditamos que unir inovação, tecnologia e consciência ambiental é essencial para o futuro.</p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 py-8 text-center">
       <p class="text-lg">Projeto desenvolvido por nossa equipe para a Maratona Tech • 2025</p>
     </div>
@@ -75,9 +159,7 @@
     const btn = document.getElementById('menuBtn');
     const menu = document.getElementById('mobileMenu');
     btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-
     AOS.init({ duration: 700, once: true });
-
     const years = [1990, 2000, 2010, 2015, 2020, 2023, 2025];
     new Chart(document.getElementById('co2Chart'), {
       type: 'line',
