@@ -13,6 +13,7 @@
     html { scroll-behavior: smooth; }
     .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px); }
     .section { padding: 4rem 1rem; }
+    summary::-webkit-details-marker { display:none; }
   </style>
 </head>
 <body class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-gray-100">
@@ -23,10 +24,12 @@
       <div class="hidden md:flex items-center gap-6 font-semibold text-gray-200">
         <a href="#sobre" class="hover:text-blue-400">Sobre</a>
         <a href="#equipe" class="hover:text-blue-400">Equipe</a>
+        <a href="#porque" class="hover:text-blue-400">Por quê?</a>
         <a href="#introducao" class="hover:text-blue-400">Introdução</a>
-        <a href="#projeto" class="hover:text-blue-400">Projeto</a>
+        <a href="#projeto" class="hover:text-blue-400">Projeto de Lei</a>
         <a href="#prompts" class="hover:text-blue-400">Prompts</a>
         <a href="#lei" class="hover:text-blue-400">Lei Complementar</a>
+        <a href="#graficos" class="hover:text-blue-400">Gráficos</a>
       </div>
       <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-gray-600 text-gray-200">☰</button>
     </div>
@@ -34,10 +37,12 @@
       <div class="px-4 py-3 flex flex-col gap-3 font-semibold">
         <a href="#sobre" class="hover:text-blue-400">Sobre</a>
         <a href="#equipe" class="hover:text-blue-400">Equipe</a>
+        <a href="#porque" class="hover:text-blue-400">Por quê?</a>
         <a href="#introducao" class="hover:text-blue-400">Introdução</a>
-        <a href="#projeto" class="hover:text-blue-400">Projeto</a>
+        <a href="#projeto" class="hover:text-blue-400">Projeto de Lei</a>
         <a href="#prompts" class="hover:text-blue-400">Prompts</a>
         <a href="#lei" class="hover:text-blue-400">Lei Complementar</a>
+        <a href="#graficos" class="hover:text-blue-400">Gráficos</a>
       </div>
     </div>
   </nav>
@@ -46,7 +51,7 @@
   <header id="home" class="relative h-[90vh] flex items-center justify-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
     <div class="text-center px-4" data-aos="fade-up">
       <h1 class="text-4xl md:text-6xl font-extrabold">Plano Nacional de Ação Climática</h1>
-      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl text-gray-300">Projeto desenvolvido para a Maratona Tech 2025 utilizando Inteligência Artificial na construção de propostas legislativas ambientais.</p>
+      <p class="max-w-3xl mx-auto mt-4 text-lg md:text-xl text-gray-300">Projeto desenvolvido na Maratona Tech 2025 usando IA para construir propostas legislativas ambientais reais e aplicáveis.</p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
         <a href="#projeto" class="px-6 py-3 rounded-full bg-blue-700 hover:bg-blue-800 transition text-white font-semibold">Ver Projeto</a>
         <a href="#prompts" class="px-6 py-3 rounded-full bg-slate-700 hover:bg-slate-600 transition text-white font-semibold">Prompts Utilizados</a>
@@ -58,102 +63,353 @@
   <section id="sobre" class="section max-w-6xl mx-auto text-center">
     <h2 class="text-3xl font-bold text-blue-300 mb-6">Colégio e Projeto</h2>
     <p class="text-lg text-gray-300">COLÉGIO ESTADUAL PROFESSORA HELENA RONKOSKI FIORAVANTE<br>
-    Ensino Fundamental e Médio<br>
-    Projeto: <span class="font-semibold">Maratona Tech 2025 – Uso da IA para Construção do PNAC</span></p>
+    Ensino Fundamental e Médio</p>
+    <p class="mt-3 text-gray-300">Projeto: <span class="font-semibold">Maratona Tech 2025 – Uso da IA para Construção do PNAC (Plano Nacional de Ação Climática)</span></p>
+    <p class="mt-2 text-gray-400">Cidade: Reserva • Ano: 2025</p>
   </section>
 
   <!-- EQUIPE -->
   <section id="equipe" class="section bg-slate-800 rounded-2xl shadow-lg max-w-6xl mx-auto text-center" data-aos="fade-up">
     <h2 class="text-3xl font-bold text-blue-300 mb-6">Equipe</h2>
-    <ul class="text-lg text-gray-300 space-y-2">
+    <ul class="text-lg text-gray-200 space-y-2">
       <li>Eduardo Setti Prachum</li>
       <li>Felipe Selhorst de Lima</li>
       <li>Heloisa Setelicki</li>
       <li>Jaine de Paula da Silva</li>
       <li>Maria Isabela Vieira dos Santos</li>
     </ul>
-    <p class="mt-4 text-sm text-gray-400">Orientação: Professora Regiane Plem (Matemática II - Trilha de Programação II)</p>
+    <p class="mt-4 text-sm text-gray-400">Orientação: Professora Regiane Plem — Matemática II (Trilha de Programação II)</p>
+  </section>
+
+  <!-- POR QUE -->
+  <section id="porque" class="section max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Por que fazemos isso?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold text-white mb-2">Conexão entre IA e Política</h3>
+        <p class="text-gray-300">A IA acelera análises e melhora a redação de textos normativos, aproximando ciência de decisão pública.</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-white mb-2">Crise Climática Urgente</h3>
+        <p class="text-gray-300">Mudanças climáticas já afetam saúde, economia e segurança. Políticas robustas são essenciais agora.</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-white mb-2">Proposta Exequível</h3>
+        <p class="text-gray-300">O PNAC foi desenhado para ser tecnicamente sólido, socialmente justo e viável de implementar.</p>
+      </div>
+    </div>
   </section>
 
   <!-- INTRODUÇÃO -->
   <section id="introducao" class="section max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Introdução e Contextualização</h2>
-    <p class="text-gray-300 leading-relaxed">Como resposta ao desafio proposto pela professora Regiane Plem, pensamos nas aplicações que ferramentas de IA podem ter no âmbito legislativo. Após deliberações, escolhemos trabalhar com <span class="font-semibold text-white">mudanças climáticas</span>, tema de relevância global. Utilizamos o ChatGPT como deputado federal e o Gemini como consultor legislativo, construindo o <span class="font-semibold text-white">PNAC – Plano Nacional de Ação Climática</span>. O projeto mostra como IA pode acelerar tarefas e apoiar a formulação de políticas públicas.</p>
+    <p class="text-gray-300 leading-relaxed">Como resposta ao desafio da professora Regiane Plem, nosso grupo explorou como ferramentas de IA podem apoiar o <span class="font-semibold text-white">processo legislativo</span>: análise, organização e aperfeiçoamento de propostas. Após discutir temas como desigualdades, economia e gênero, elegemos as <span class="font-semibold text-white">mudanças climáticas</span> pela relevância nacional e global. 
+    Usamos o <span class="font-semibold text-white">ChatGPT</span> como um deputado federal para redigir o projeto e o <span class="font-semibold text-white">Gemini</span> como consultor legislativo para revisar e sugerir a lei complementar. Assim nasceu o <span class="font-semibold text-white">PNAC</span>, com diretrizes de mitigação, adaptação e inovação, pensadas para aplicação real.</p>
   </section>
 
-  <!-- PROJETO DE LEI -->
+  <!-- PROJETO DE LEI (OFICIAL) -->
   <section id="projeto" class="section bg-slate-800 rounded-2xl shadow-lg max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Projeto de Lei – PNAC</h2>
-    <p class="text-gray-300 mb-6">Dispõe sobre a implementação de medidas urgentes e estruturais para reduzir os impactos das mudanças climáticas no Brasil e dá outras providências.</p>
-    <details class="bg-slate-900 p-4 rounded-lg mb-4">
-      <summary class="cursor-pointer font-semibold">Áreas de atuação</summary>
-      <ul class="list-disc list-inside text-gray-300 mt-2">
-        <li>Mitigação das Emissões de Gases de Efeito Estufa</li>
-        <li>Adaptação aos Impactos Climáticos</li>
-        <li>Pesquisa, Inovação e Tecnologia Climática</li>
-      </ul>
-    </details>
-    <details class="bg-slate-900 p-4 rounded-lg mb-4">
-      <summary class="cursor-pointer font-semibold">Diretrizes principais</summary>
-      <ul class="list-disc list-inside text-gray-300 mt-2">
-        <li>Transição Energética Sustentável</li>
-        <li>Descarbonização da Indústria e Transporte</li>
-        <li>Conservação de Ecossistemas</li>
-        <li>Gestão da Água</li>
-        <li>Resiliência em Comunidades Vulneráveis</li>
-      </ul>
-    </details>
-    <details class="bg-slate-900 p-4 rounded-lg">
-      <summary class="cursor-pointer font-semibold">Outros pontos</summary>
-      <p class="text-gray-300 mt-2">Taxa Nacional de Carbono, Fundo Nacional de Clima, proibição do desmatamento ilegal, monitoramento de emissões (SISMOGEE), ratificação do Acordo de Paris, educação ambiental, incentivos à agricultura sustentável.</p>
-    </details>
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Projeto de Lei nº XXXX/2025 — PNAC</h2>
+    <p class="text-gray-300 mb-6 text-center">“Dispõe sobre a implementação de medidas urgentes e estruturais para reduzir os impactos das mudanças climáticas no Brasil e dá outras providências”.</p>
+
+    <!-- Artigos em detalhes -->
+    <div class="space-y-4">
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 1º — Instituição do PNAC</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p>§ 1º Áreas de atuação:</p>
+          <ul class="list-disc list-inside ml-2">
+            <li><span class="font-semibold">Mitigação</span>: reduzir emissões em energia, transporte, indústria e agricultura.</li>
+            <li><span class="font-semibold">Adaptação</span>: proteger populações e infraestrutura urbanas e rurais.</li>
+            <li><span class="font-semibold">Pesquisa e Tecnologia</span>: inovação sustentável para mitigação e adaptação.</li>
+          </ul>
+          <p>§ 2º Implementação integrada entre União, Estados e Municípios, com participação da sociedade civil e setor privado.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 2º — Diretrizes do PNAC</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p><span class="font-semibold">I – Transição Energética Sustentável</span></p>
+          <ul class="list-disc list-inside ml-2">
+            <li>Meta: 50% da matriz de fontes renováveis até 2030.</li>
+            <li>a) Energia Solar — usinas e geração distribuída acessível.</li>
+            <li>b) Energia Eólica — expansão de parques e cadeia produtiva.</li>
+            <li>c) Biomassa — uso de resíduos agrícolas e florestais.</li>
+          </ul>
+          <p>§ 2º Incentivos fiscais para o setor de energias renováveis.</p>
+          <p class="mt-2"><span class="font-semibold">II – Descarbonização da Indústria e Transporte</span></p>
+          <ul class="list-disc list-inside ml-2">
+            <li>a) Indústria — tecnologias limpas e energias renováveis.</li>
+            <li>b) Transporte — veículos elétricos/biocombustíveis e infraestrutura de recarga.</li>
+          </ul>
+          <p>§ 2º Programa de Incentivos à Mobilidade Sustentável.</p>
+          <p class="mt-2"><span class="font-semibold">III – Conservação e Recuperação de Ecossistemas</span></p>
+          <ul class="list-disc list-inside ml-2">
+            <li>a) Reflorestamento — restaurar 10 milhões de hectares até 2035.</li>
+            <li>b) Áreas Protegidas — fiscalização e integridade dos biomas.</li>
+          </ul>
+          <p>§ 2º Agricultura sustentável com foco em agroecologia.</p>
+          <p class="mt-2"><span class="font-semibold">IV – Gestão Sustentável da Água</span></p>
+          <ul class="list-disc list-inside ml-2">
+            <li>a) Eficiência — tecnologias de baixo consumo e irrigação eficiente.</li>
+            <li>b) Reúso — sistemas para atividades agrícolas, industriais e urbanas.</li>
+          </ul>
+          <p>§ 2º Drenagem e contenção de enchentes em áreas urbanas de risco.</p>
+          <p class="mt-2"><span class="font-semibold">V – Resiliência em Comunidades Vulneráveis</span></p>
+          <ul class="list-disc list-inside ml-2">
+            <li>a) Moradia resiliente — resistência a enchentes e deslizamentos.</li>
+            <li>b) Infraestrutura verde — parques e jardins que absorvam chuva e calor.</li>
+          </ul>
+          <p>§ 2º Fundo de Apoio a Comunidades Vulneráveis.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 3º — Taxa Nacional de Carbono (TNC)</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p>§ 1º Aplicada a empresas com altas emissões.</p>
+          <ul class="list-disc list-inside ml-2">
+            <li>a) Baseada nas emissões anuais de CO₂e, com progressividade.</li>
+            <li>b) Pagamento pode financiar compensações (reflorestamento, tecnologias limpas).</li>
+          </ul>
+          <p>§ 2º Arrecadação destinada ao Fundo Nacional de Clima.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 4º — Fundo Nacional de Clima</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p>§ 1º Financiamento para:</p>
+          <ul class="list-disc list-inside ml-2">
+            <li>Tecnologia e inovação climática.</li>
+            <li>Apoio a comunidades vulneráveis.</li>
+            <li>Reflorestamento e recuperação de ecossistemas.</li>
+          </ul>
+          <p>§ 2º Gestão por Comissão de Governança Climática (governo, sociedade civil e especialistas).</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 5º — Proibição do Desmatamento Ilegal</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <ul class="list-disc list-inside ml-2">
+            <li>Multas proporcionais à área desmatada.</li>
+            <li>Bloqueio de financiamentos e incentivos.</li>
+          </ul>
+          <p>§ 2º Fiscalização por satélite e monitoramento em tempo real.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 6º — SISMOGEE</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <ul class="list-disc list-inside ml-2">
+            <li>Plataformas de satélites e sensores para monitoramento das emissões.</li>
+            <li>Relatórios anuais públicos de emissões.</li>
+          </ul>
+          <p>§ 2º Integração com plataformas internacionais conforme o Acordo de Paris.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 7º — Acordo de Paris e Metas</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p>§ 1º Redução de 40% até 2030 (base 2005).</p>
+          <p>§ 2º Neutralidade de carbono até 2050.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 8º — Educação e Conscientização</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <ul class="list-disc list-inside ml-2">
+            <li>Inserção de temas climáticos no currículo básico.</li>
+            <li>Capacitação de professores, gestores e líderes comunitários.</li>
+          </ul>
+          <p>§ 2º Campanhas de conscientização para ação individual e coletiva.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 9º — Sistema de Incentivos à Agricultura Sustentável (SIAS)</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <ul class="list-disc list-inside ml-2">
+            <li>Agroecologia e produção orgânica.</li>
+            <li>Integração Lavoura-Pecuária-Floresta.</li>
+          </ul>
+          <p>§ 2º Selo "Agricultura Sustentável" para certificação.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 10 — Integração com Planejamento</summary>
+        <div class="mt-3 text-gray-300 space-y-2">
+          <p>§ 1º Estratégias climáticas integradas a planos de desenvolvimento.</p>
+          <p>§ 2º Participação social no planejamento e execução.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Justificativa Final -->
+    <div class="mt-8 bg-slate-900 rounded-lg p-5">
+      <h3 class="text-2xl font-semibold text-white mb-3">Justificativa Final</h3>
+      <div class="prose prose-invert max-w-none text-gray-300">
+        <p>As mudanças climáticas representam uma das maiores ameaças do século XXI, afetando ecossistemas, biodiversidade e vidas humanas. O Brasil, por sua dimensão territorial e riqueza biológica, é particularmente vulnerável. É urgente reduzir emissões e adaptar comunidades e setores econômicos às novas realidades climáticas.</p>
+        <p>Embora o país contribua significativamente para emissões, possui grande potencial em energias renováveis, tecnologias verdes e restauração ecológica. Este projeto direciona esforços a energia, indústria e agricultura, protegendo florestas e ecossistemas e alinhando-se ao Acordo de Paris.</p>
+        <p>O projeto reforça a adaptação de populações vulneráveis com infraestrutura resiliente e soluções baseadas na natureza. Recuperação de áreas degradadas e combate ao desmatamento ilegal restabelecem a capacidade de sequestro de carbono e protegem a biodiversidade.</p>
+        <p>O Fundo Nacional de Clima financiará tecnologias, educação ambiental e resiliência comunitária. A Taxa Nacional de Carbono precifica emissões, incentiva práticas sustentáveis e garante recursos para projetos ambientais.</p>
+        <p>A educação climática é pilar para mobilizar a sociedade, formando cidadãos capazes de agir individual e coletivamente por uma economia de baixo carbono.</p>
+        <p>Com ações integradas de mitigação e adaptação, o Brasil pode liderar a agenda climática, cumprir compromissos internacionais e criar oportunidades econômicas, promovendo uma sociedade mais justa e resiliente.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- PROMPTS -->
+  <!-- PROMPTS UTILIZADOS (COMPLETOS) -->
   <section id="prompts" class="section max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Prompts Utilizados</h2>
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Prompts Utilizados — Completo</h2>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-slate-800 p-4 rounded-lg shadow">
-        <h3 class="font-semibold text-white mb-2">ChatGPT</h3>
-        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-          <li>Criar projeto de lei sobre mudanças climáticas.</li>
-          <li>Detalhar artigos e justificativas.</li>
-          <li>Estruturar justificativa final.</li>
-          <li>Ampliar justificativa com introdução, desenvolvimento e conclusão.</li>
-        </ul>
+      <div class="bg-slate-800 p-5 rounded-lg shadow">
+        <h3 class="font-semibold text-white mb-3">ChatGPT</h3>
+        <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+          <li>Você é um deputado federal do Brasil e precisa criar um projeto de lei sobre medidas a serem implementadas para reduzir os impactos das mudanças climáticas no país. Dê sua resposta em forma de um projeto de lei.</li>
+          <li>Gostaria que você detalhasse sua resposta e desse uma descrição mais ampla para cada artigo, desenvolvendo principalmente sua justificativa do projeto.</li>
+          <li>Gostaria que desenvolvesse apenas uma justificativa para o projeto de lei, incluída no fim dele. E desenvolva mais os artigos, detalhando-os em incisos e alíneas.</li>
+          <li>Excelente! Gostaria agora que desenvolvesse a justificativa final com 6 parágrafos, estruturada em introdução, desenvolvimento e conclusão.</li>
+        </ol>
       </div>
-      <div class="bg-slate-800 p-4 rounded-lg shadow">
-        <h3 class="font-semibold text-white mb-2">Gemini</h3>
-        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-          <li>Analisar viabilidade e organização do projeto.</li>
-          <li>Sugerir criação de lei complementar.</li>
-          <li>Desenvolver a lei complementar para a Taxa Nacional de Carbono.</li>
-        </ul>
+      <div class="bg-slate-800 p-5 rounded-lg shadow">
+        <h3 class="font-semibold text-white mb-3">Gemini</h3>
+        <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+          <li>Você é um consultor legislativo e deve analisar o projeto de lei em anexo quanto a viabilidade, congruência e organização. Sugira mudanças possíveis para melhorar o texto e objetivo do projeto. (A ferramenta apontou a necessidade da criação de uma lei complementar para a concretização do artigo 3.)</li>
+          <li>Então, por favor, desenvolva a lei complementar necessária para a instituição da taxa do artigo 3.</li>
+        </ol>
       </div>
     </div>
   </section>
 
   <!-- LEI COMPLEMENTAR -->
   <section id="lei" class="section bg-slate-800 rounded-2xl shadow-lg max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Lei Complementar – TNC</h2>
-    <p class="text-gray-300">Institui a <span class="font-semibold text-white">Taxa Nacional de Carbono (TNC)</span>, regulamenta sua base de cálculo e alíquotas progressivas, define sua destinação ao Fundo Nacional sobre Mudança do Clima e estabelece mecanismos de abatimento via créditos de carbono.</p>
+    <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Projeto de Lei Complementar nº XXXX/2025 — TNC</h2>
+    <p class="text-gray-300 mb-4 text-center">"Institui a Taxa Nacional de Carbono (TNC), regulamenta sua base de cálculo e alíquotas, define sua destinação e estabelece outras providências."</p>
+
+    <div class="space-y-4">
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 1º — Instituição</summary>
+        <p class="text-gray-300 mt-2">Institui a TNC, de natureza tributária, para desincentivar emissões de GEE e financiar mitigação e adaptação.</p>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 2º — Incidência</summary>
+        <div class="text-gray-300 mt-2 space-y-2">
+          <p>Incide sobre pessoas jurídicas com emissões anuais superiores a 25.000 tCO₂e.</p>
+          <p>§ 1º Regulamento definirá setores e atividades sujeitos à taxa.</p>
+          <p>§ 2º Apuração pelo SISMOGEE com dados declarados e auditorias independentes.</p>
+        </div>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 3º — Base de Cálculo</summary>
+        <p class="text-gray-300 mt-2">Quantidade de CO₂e em toneladas que exceder o limite do Art. 2º.</p>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 4º — Alíquotas Progressivas</summary>
+        <div class="overflow-x-auto mt-3">
+          <table class="min-w-full text-left text-gray-300">
+            <thead class="text-gray-400">
+              <tr><th class="py-1 pr-6">Volume Anual (tCO₂e)</th><th class="py-1">Alíquota (R$ / t)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="py-1 pr-6">Acima de 25.000 até 50.000</td><td class="py-1">R$ 10,00</td></tr>
+              <tr><td class="py-1 pr-6">Acima de 50.000 até 100.000</td><td class="py-1">R$ 25,00</td></tr>
+              <tr><td class="py-1 pr-6">Acima de 100.000 até 500.000</td><td class="py-1">R$ 50,00</td></tr>
+              <tr><td class="py-1 pr-6">Acima de 500.000</td><td class="py-1">R$ 75,00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-gray-400 text-sm mt-2">§ 1º Valores podem ser revisados anualmente (IPCA e metas climáticas). § 2º Aplicação por faixa.</p>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 5º — Isenções</summary>
+        <ul class="list-disc list-inside text-gray-300 mt-2">
+          <li>Geração de energia renovável.</li>
+          <li>Tecnologias de captura e armazenamento de carbono.</li>
+          <li>Agricultura de baixo carbono certificada pelo SIAS.</li>
+        </ul>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 6º — Abatimento via Créditos</summary>
+        <p class="text-gray-300 mt-2">Abatimento de até 70% mediante créditos de carbono certificados (reflorestamento, restauração, etc.).</p>
+        <p class="text-gray-400 text-sm">§ 1º Critérios de certificação por regulamento. § 2º Mínimo de 30% permanece devido.</p>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 7º — Destinação</summary>
+        <p class="text-gray-300 mt-2">Arrecadação destinada integralmente ao Fundo Nacional sobre Mudança do Clima (Lei nº 12.187/2009) para tecnologias limpas, restauração, resiliência e P&amp;D.</p>
+      </details>
+
+      <details class="bg-slate-900 rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-white">Art. 8º — Vigência</summary>
+        <p class="text-gray-300 mt-2">Vigência na data da publicação, com efeitos após 90 dias (anterioridade tributária).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- GRÁFICOS (ILUSTRATIVOS) -->
+  <section id="graficos" class="section max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-300 mb-10 text-center">Dados Climáticos (ilustrativos)</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-slate-800 rounded-xl shadow"><div class="h-56"><canvas id="co2Chart" class="w-full h-full"></canvas></div></div>
+      <div class="p-6 bg-slate-800 rounded-xl shadow"><div class="h-56"><canvas id="tempChart" class="w-full h-full"></canvas></div></div>
+      <div class="p-6 bg-slate-800 rounded-xl shadow"><div class="h-56"><canvas id="forestChart" class="w-full h-full"></canvas></div></div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-950 text-gray-300 mt-10">
+  <footer class="bg-slate-950 text-gray-300">
     <div class="max-w-7xl mx-auto px-4 py-8 text-center">
-      <p class="text-lg">Projeto desenvolvido na <span class="font-semibold">Maratona Tech 2025</span> • Colégio Estadual Professora Helena Ronkoski Fioravante</p>
+      <p class="text-lg">Projeto desenvolvido por nossa equipe para a <span class="font-semibold">Maratona Tech 2025</span> • Colégio Estadual Professora Helena Ronkoski Fioravante</p>
     </div>
   </footer>
 
   <script>
     const btn = document.getElementById('menuBtn')
     const menu = document.getElementById('mobileMenu')
-    btn.addEventListener('click', () => menu.classList.toggle('hidden'))
+    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'))
+
     document.addEventListener('DOMContentLoaded', () => {
       AOS.init({ duration: 700, once: true })
+
+      // Gráficos ilustrativos
+      const years = [1990, 2000, 2010, 2015, 2020, 2023, 2025]
+      const common = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: '#cbd5e1' } } },
+        scales: {
+          x: { ticks: { color: '#cbd5e1' }, grid: { color: 'rgba(203,213,225,0.06)' } },
+          y: { ticks: { color: '#cbd5e1' }, grid: { color: 'rgba(203,213,225,0.06)' } }
+        }
+      }
+      new Chart(document.getElementById('co2Chart'), {
+        type: 'line',
+        data: { labels: years, datasets: [{ label: 'CO₂ (ppm)', data: [355,370,390,400,414,420,423], tension: 0.3, borderColor: 'rgba(96,165,250,1)', backgroundColor: 'rgba(96,165,250,0.12)', fill: true }] },
+        options: common
+      })
+      new Chart(document.getElementById('tempChart'), {
+        type: 'line',
+        data: { labels: years, datasets: [{ label: 'Δ Temp (°C)', data: [0.2,0.35,0.55,0.7,0.9,1.0,1.05], tension: 0.3, borderColor: 'rgba(147,197,253,1)', backgroundColor: 'rgba(147,197,253,0.12)', fill: true }] },
+        options: common
+      })
+      new Chart(document.getElementById('forestChart'), {
+        type: 'bar',
+        data: { labels: years, datasets: [{ label: 'Índice de Desmatamento', data: [100,120,150,130,160,170,165], backgroundColor: 'rgba(59,130,246,0.9)' }] },
+        options: common
+      })
     })
   </script>
 </body>
 </html>
-
